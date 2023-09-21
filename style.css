@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+--Cyan: rgb(0, 255, 247);
+--hover:  rgba(0, 255, 247, 0.5);
+--Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background: var(--Very-dark-blue-main-BG);
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main{
+    height: 85%;
+    width: 300px; 
+    padding: 20px;
+    background: var(--Very-dark-blue-card-BG);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+.card,.img img  {
+    height: 100%;
+    width: 100%;
+}
+.img{
+    height: 50%;
+    position: relative;
+    border-radius: 10px;
+}
+.img #blur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--hover);
+    display: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.img:hover #blur {
+    display: flex;
+}
+.img #blur img{
+    height: 50px;
+    width: 50px;
+}
+.img img{
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content{
+    margin: 20px 0;
+}
+.content h1{
+    font-weight: 600;
+    color: var(--White);
+    font-size: 1.4rem;
+    margin: 10px 0;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+.content h1:hover{
+    color: var(--Cyan);
+}
+.content p{
+    color: var(--Soft-blue);
+    margin: 10px 0;
+}
+.content span {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.content span p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+#line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--Very-dark-blue-line);
+    margin: 10px 0;
+}
+.content .profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+.content .profile img{
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+ .profile p , .profile #crea {
+    display: inline;
+    color: var(--Soft-blue)
+ }
+ .profile p{
+    width: 80%;
+    padding: 4px;
+    color: white;
+    transition: 0.2s linear;
+    cursor: pointer;
+ }
+ .profile p:hover{
+    color: var(--Cyan);
+ }
