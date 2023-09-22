@@ -14,7 +14,7 @@
 }
 @font-face {
     font-family: Outfit;
-    src: url('https://fonts.google.com/specimen/Outfit');
+    src: url(https://fonts.google.com/specimen/Outfit);
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
